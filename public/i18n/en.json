@@ -10,5 +10,12 @@
     "royalTouch": "Royal Touch",
     "login":"Login",
     "register":"Register"
+  },
+  "auth":{
+    "userName":"User Name",
+    "email":"Email",
+    "password":"Password",
+    "passwordConfirmation":"Password Confirmation",
+    "registerNow":"Register Now"
   }
 }

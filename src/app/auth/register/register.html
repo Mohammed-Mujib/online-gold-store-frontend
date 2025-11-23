@@ -1,12 +1,38 @@
 <main>
   <div class="row m-0 p-0">
-    <div class="col-lg-6 h-100 left-side p-5 m-0 d-flex">
-      <p-fieldset legend="login"  translate>
-        <p class="m-0">Lorem ipsum dolor sit amet...</p>
+    <div
+      class="col-lg-6 h-100 left-side p-5 m-0 d-felx align-content-center justify-content-center"
+    >
+      <p-fieldset [legend]="'global.register' | translate" class=" bg-info">
+        <form action="" class="p-3 d-flex flex-column gap-3">
+          <div class="row gap-2">
+            <label for="username">{{"auth.userName" |translate}}</label>
+            <input pInputText id="username" aria-describedby="username-help"  />
+          </div>
+          <div class="row gap-2">
+            <label for="username">{{"auth.email" |translate}}</label>
+            <input pInputText id="email" aria-describedby="email-help"  />
+          </div>
+          <div class="row gap-2">
+            <label for="username">{{"auth.password" |translate}}</label>
+            <input pInputText id="password" aria-describedby="password-help"  />
+          </div>
+          <div class="row gap-2">
+            <label for="username">{{"auth.passwordConfirmation" |translate}}</label>
+            <input pInputText id="passwordConfirmation" aria-describedby="passwordConfrimation-help"  />
+          </div>
+          <div class=" py-2">
+            <button class="btn-primary w-100 fs-5  fw-semibold">{{"auth.registerNow" |translate}}</button>
+          </div>
+        </form>
       </p-fieldset>
     </div>
-    <div class="col-lg-6 h-100 right-side p-5 m-0">
-
+    <div
+      class="col-lg-6 h-100 right-side p-5 m-0 d-felx align-content-center justify-content-center"
+    >
+      <div class="image-holder p-5">
+        <img src="../assets/images/OGSIcone.png" alt="" class="w-100" />
+      </div>
     </div>
   </div>
 </main>
