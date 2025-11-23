@@ -1,0 +1,14 @@
+{
+  "language": "English",
+  "global": {
+    "home": "Home",
+    "shopNow": "Shop Now",
+    "sellGold": "Sell Gold",
+    "about": "About",
+    "contactUs": "Contact Us",
+    "customeOrder": "Custome Order",
+    "royalTouch": "Royal Touch",
+    "login":"Login",
+    "register":"Register"
+  }
+}
