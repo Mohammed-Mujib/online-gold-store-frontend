@@ -13,6 +13,14 @@ main {
 .left-side {
   min-height: 100svh;
   max-height: 100svh;
+  background: #f09819; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #edde5d, #f09819); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    280deg,
+    #edde5d,
+    #f09819
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   // max-height: 100svh;
   // background-color: #0f172a87;
   // background-color: rgba(var(--color-bg-900), var(--color-bg-900), var(--color-bg-900), 0.8);
@@ -26,3 +34,25 @@ main {
 // background-repeat: no-repeat;
 // background-size: cover;
 // background-position: center;
+// .btn-primary {
+//   background-color: var(--color-bg-900) !important;
+//   color: var(--color-primary-200) !important;
+//   border: 1px solid var(--color-bg-600) !important;
+//   padding: 8px 14px;
+//   border-radius: 6px;
+//   transition: 0.2s ease-in-out;
+// }
+
+// .btn-primary:hover {
+//   background-color: var(--color-bg-500);
+// }
+.auth-redirect {
+  span {
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      color: var(--color-primary-300) !important;
+    }
+  }
+}

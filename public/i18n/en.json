@@ -16,6 +16,7 @@
     "email":"Email",
     "password":"Password",
     "passwordConfirmation":"Password Confirmation",
-    "registerNow":"Register Now"
+    "registerNow":"Register Now",
+    "name":"Name"
   }
 }

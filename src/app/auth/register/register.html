@@ -3,29 +3,39 @@
     <div
       class="col-lg-6 h-100 left-side p-5 m-0 d-felx align-content-center justify-content-center"
     >
-      <p-fieldset [legend]="'global.register' | translate" class=" bg-info">
-        <form action="" class="p-3 d-flex flex-column gap-3">
-          <div class="row gap-2">
-            <label for="username">{{"auth.userName" |translate}}</label>
-            <input pInputText id="username" aria-describedby="username-help"  />
+      <fieldset class="p-4 rounded-5 bg-dark text-white pt-0 d-flex justify-content-center flex-column ">
+        <legend class="fa-2x  bg-primary-500 w-auto mx-auto p-2 rounded-bottom-4 pb-3 px-4 text-dark">{{ 'global.register' | translate }}</legend>
+        <div class="p-3 d-flex flex-column gap-3 py-3">
+          <div>
+            <label for="name" class="form-label">{{ 'auth.name' | translate }}</label>
+            <input id="name" aria-describedby="name-help" class="form-control" />
           </div>
-          <div class="row gap-2">
-            <label for="username">{{"auth.email" |translate}}</label>
-            <input pInputText id="email" aria-describedby="email-help"  />
+          <div>
+            <label for="email" class="form-label">{{ 'auth.email' | translate }}</label>
+            <input class="form-control" id="email" aria-describedby="email-help" />
           </div>
-          <div class="row gap-2">
-            <label for="username">{{"auth.password" |translate}}</label>
-            <input pInputText id="password" aria-describedby="password-help"  />
+          <div>
+            <label for="password" class="form-label">{{ 'auth.password' | translate }}</label>
+            <input class="form-control" id="password" aria-describedby="password-help" />
           </div>
-          <div class="row gap-2">
-            <label for="username">{{"auth.passwordConfirmation" |translate}}</label>
-            <input pInputText id="passwordConfirmation" aria-describedby="passwordConfrimation-help"  />
+          <div>
+            <label for="passworConfirmation" class="form-label">{{ 'auth.passwordConfirmation' | translate }}</label>
+            <input
+              class="form-control"
+              id="passwordConfirmation"
+              aria-describedby="passwordConfrimation-help"
+            />
           </div>
-          <div class=" py-2">
-            <button class="btn-primary w-100 fs-5  fw-semibold">{{"auth.registerNow" |translate}}</button>
+          <div class="py-2 pt-4">
+            <button class="btn-primary w-100 fs-5 fw-semibold mx-0 ">
+              {{ 'auth.registerNow' | translate }}
+            </button>
           </div>
-        </form>
-      </p-fieldset>
+          <div class="text-center auth-redirect">
+            <p>Already have an acount ? <span class=" px-2">{{"global.login" |translate}}</span></p>
+          </div>
+        </div>
+      </fieldset>
     </div>
     <div
       class="col-lg-6 h-100 right-side p-5 m-0 d-felx align-content-center justify-content-center"
