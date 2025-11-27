@@ -8,8 +8,12 @@
     "contactUs": "Contact Us",
     "customeOrder": "Custome Order",
     "royalTouch": "Royal Touch",
-    "login":"Login",
-    "register":"Register"
+    "login": "Login",
+    "register": "Register",
+    "language":"Language",
+    "languages": "Languages",
+    "english":"English",
+    "arabic":"Arabic"
   },
   "auth":{
     "userName":"User Name",
@@ -17,6 +21,9 @@
     "password":"Password",
     "passwordConfirmation":"Password Confirmation",
     "registerNow":"Register Now",
-    "name":"Name"
+    "name":"Name",
+    "loginNow":"Login Now",
+    "alreadyHaveAnAccount?":"Already have an account ?",
+    "don'tHaveAnAccount?":"Don't have an account ?"
   }
 }

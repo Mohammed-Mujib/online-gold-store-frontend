@@ -66,7 +66,7 @@
   background-color: var(--color-primary-800);
 }
 .bg-primary-900 {
-  background-color: var(--color-primary-900);
+  background-color: var(--color-primary-900) !important;
 }
 
 .bg-dark {
@@ -118,60 +118,3 @@
 .btn-primary:hover {
   background-color: var(--color-primary-500);
 }
-
-// div
-// {
-//   font-family: Arial, Helvetica, sans-serif;
-//   margin: 0;
-//   padding: 1rem 2rem;
-// }
-
-// p, .translated
-// {
-//   background-color: #d4f3ff;
-//   padding:0.5rem 1rem;
-// }
-
-// button {
-//   background-color: #008CBA;
-//   border: none;
-//   color: white;
-//   padding: 0.25rem 0.5rem;
-//   text-align: center;
-//   text-decoration: none;
-//   display: inline-block;
-//   font-size: 16px;
-//   margin-left: 1rem;
-//   border-radius: 0.5rem;
-//   transition: background-color 0.3s ease;
-
-//   &:hover {
-//     background-color: #005f73;
-//   }
-// }
-
-// .title {
-//   background-color: #bde8f8;
-//   padding: 0.5rem 2rem 1.5rem 2rem;
-//   position: sticky;
-//   top: 0;
-//   z-index: 1000;
-// }
-
-// .main-text {
-//   color: var(--main-text) !important;
-// }
-
-// .navbar-nav{
-//     color: var(--text-white) !important;
-// }
-// .btn-primary {
-//   background-color: var(--main-text) !important;
-//   color: var(--main-bg) !important;
-//   border: none !important;
-//   outline: none !important;
-//   :hover {
-//     background-color: var(--main-text-hover) !important;
-//     color: var(--text-white) !important;
-//   }
-// }
