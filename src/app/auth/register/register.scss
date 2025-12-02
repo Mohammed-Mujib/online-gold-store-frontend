@@ -18,8 +18,19 @@ main {
 
   .image-holder {
     background-color: #0c0a09;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
+    // padding-top: 0px !important;
+    // padding-bottom: 0px !important;
+    // backdrop-filter: blur(20px);
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+    position: relative;
+    transition: all 0.3s ease-in-out;
   }
 }
 .btn-primary {
@@ -36,7 +47,7 @@ main {
   // color: var(--color-bg-200) !important;
 }
 .auth-redirect {
-  span {
+  a {
     cursor: pointer;
     transition: 0.2s;
 
@@ -71,7 +82,8 @@ main {
     box-shadow: -10px 0 0 var(--color-primary-400); // fix
   }
 }
-input{
+input {
   background-color: var(--color-bg-800) !important;
   border-color: var(--color-bg-600) !important;
+  color: var(--color-primary-100) !important;
 }

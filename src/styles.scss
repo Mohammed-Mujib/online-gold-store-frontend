@@ -118,3 +118,8 @@
 .btn-primary:hover {
   background-color: var(--color-primary-500);
 }
+
+a {
+  text-decoration-line: none !important;
+  color: var(--color-bg-100);
+}

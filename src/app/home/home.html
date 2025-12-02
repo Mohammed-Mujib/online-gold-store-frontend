@@ -8,7 +8,7 @@
         height="50"
         class="d-inline-block align-text-top"
       />
-      <span class=" text-primary">{{ 'global.royalTouch' | translate }}</span>
+      <span class="text-primary">{{ 'global.royalTouch' | translate }}</span>
     </a>
     <button
       class="navbar-toggler"
@@ -45,11 +45,19 @@
     </div>
     <div class="collapse navbar-collapse w-auto" id="navbarNav">
       <div class="d-flex align-items-center justify-content-end ms-auto">
-        <button type="button" class="btn btn-primary mx-1">{{ 'global.login' | translate }}</button>
-        <button type="button" class="btn btn-primary mx-1">
+        @if (!token) {
+        <a type="button" class="btn btn-primary mx-1" [routerLink]="['/auth/login']">{{
+          'global.login' | translate
+        }}</a>
+        <a type="button" class="btn btn-primary mx-1" [routerLink]="['/auth/register']">
           {{ 'global.register' | translate }}
-        </button>
-        <span class="main-tex bg-white p-1 rounded-3"><i class="fa-regular fa-user fs-3"></i></span>
+        </a>
+        } @else {
+
+        <span class="main-tex bg-white p-1 rounded-3"
+          ><i class="fa-regular fa-user fs-3"></i
+        ></span>
+        }
       </div>
     </div>
   </div>
