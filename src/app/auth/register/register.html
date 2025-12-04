@@ -1,0 +1,106 @@
+<main class="position-relative">
+  <!-- languaes -->
+  <div class="px-2 m-2 position-absolute top-0 end-0 bg-dark rounded-start-2 pe-4 me-0">
+    <div class="dropdown">
+      <a
+        class="btn btn-secondary dropdown-toggle bg-dark border-0"
+        href="#"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        {{ 'global.languages' | translate }}
+      </a>
+
+      <ul class="dropdown-menu">
+        <li>
+          <span class="dropdown-item">{{ 'global.english' | translate }}</span>
+        </li>
+        <li>
+          <span class="dropdown-item">{{ 'global.arabic' | translate }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row m-0 p-0">
+    <!-- logo and imaes -->
+    <div
+      class="col-lg-12 col-xl-6 col-12 col-md-12 h-100 right-side p-5 m-0 d-flex align-content-center justify-content-center ps-0"
+    >
+      <div
+        class="image-holder p-5 rounded-end-pill d-flex justify-content-center align-items-center ps-0 rounded-start-0"
+      >
+        <img src="../assets/images/OGSIcone.png" alt="" class="w-100" />
+      </div>
+    </div>
+    <!-- form -->
+    <div class="col-lg-12 col-xl-6 col-12 col-md-12 vh-100 left-side p-5 m-0">
+      <div class="h-100 d-flex align-items-center justify-content-center p-5">
+        <div class="p-4 rounded-5 bg-dark text-white pt-0 w-100" [formGroup]="userForm">
+          <h4
+            class="h-from-auth position-relative fs-3 fw-semibold text-dark mx-auto p-2 pb-3 px-4 rounded-bottom-3 bg-primary-400"
+          >
+            {{ 'global.register' | translate }}
+          </h4>
+
+          <div class="p-3 d-flex flex-column gap-3 py-3">
+            <div>
+              <label for="name" class="form-label">{{ 'auth.name' | translate }}</label>
+              <input id="name" class="form-control" required formControlName="name" />
+            </div>
+
+            <div>
+              <label for="email" class="form-label">{{ 'auth.email' | translate }}</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                required
+                formControlName="email"
+              />
+            </div>
+
+            <div>
+              <label for="password" class="form-label">{{ 'auth.password' | translate }}</label>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                required
+                formControlName="password"
+              />
+            </div>
+
+            <div>
+              <label for="passwordConfirmation" class="form-label">{{
+                'auth.passwordConfirmation' | translate
+              }}</label>
+              <input
+                type="password"
+                id="passwordConfirmation"
+                class="form-control"
+                required
+                formControlName="password_confirmation"
+              />
+            </div>
+
+            <div class="py-2 pt-4">
+              <button class="btn btn-primary w-100 fs-5 fw-semibold" (click)="onSubmit()">
+                {{ 'auth.registerNow' | translate }}
+              </button>
+            </div>
+
+            <div class="text-center auth-redirect">
+              <p>
+                {{ 'auth.alreadyHaveAnAccount?' | translate }}
+                <a [routerLink]="['/auth/login']" class="px-2" style="cursor: pointer">
+                  {{ 'global.login' | translate }}
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

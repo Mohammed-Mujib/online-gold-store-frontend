@@ -1,1 +1,125 @@
 /* You can add global styles to this file, and also import other style files */
+// @import "primeicons/primeicons.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary (Yellow / Amber) */
+  --color-primary-50: #fffbeb;
+  --color-primary-100: #fef3c7;
+  --color-primary-200: #fde68a;
+  --color-primary-300: #fcd34d;
+  --color-primary-400: #fbbf24;
+  --color-primary-500: #f59e0b; /* main */
+  --color-primary-600: #d97706;
+  --color-primary-700: #b45309;
+  --color-primary-800: #92400e;
+  --color-primary-900: #78350f;
+
+
+  /* Neutral / Background (Slate-like) */
+  --color-bg-50: #f8f9fa;
+  --color-bg-100: #f1f5f9;
+  --color-bg-200: #e2e8f0;
+  --color-bg-300: #cbd5e1;
+  --color-bg-400: #94a3b8;
+  --color-bg-500: #64748b;
+  --color-bg-600: #475569;
+  --color-bg-700: #334155;
+  --color-bg-800: #1e293b;
+  --color-bg-900: #0c0a09; /* your main */
+
+  /* White */
+  --color-white: #ffffff;
+}
+
+.bg-primary {
+  background-color: var(--color-primary-500);
+}
+.bg-primary-50 {
+  background-color: var(--color-primary-50);
+}
+.bg-primary-100 {
+  background-color: var(--color-primary-100);
+}
+.bg-primary-200 {
+  background-color: var(--color-primary-200);
+}
+.bg-primary-300 {
+  background-color: var(--color-primary-300);
+}
+.bg-primary-400 {
+  background-color: var(--color-primary-400);
+}
+.bg-primary-500 {
+  background-color: var(--color-primary-500);
+}
+.bg-primary-600 {
+  background-color: var(--color-primary-600);
+}
+.bg-primary-700 {
+  background-color: var(--color-primary-700);
+}
+.bg-primary-800 {
+  background-color: var(--color-primary-800);
+}
+.bg-primary-900 {
+  background-color: var(--color-primary-900) !important;
+}
+
+.bg-dark {
+  background-color: var(--color-bg-900);
+}
+.bg-dark-800 {
+  background-color: var(--color-bg-800);
+}
+.bg-dark-700 {
+  background-color: var(--color-bg-700);
+}
+
+.text-primary {
+  color: var(--color-primary-300) !important;
+}
+.text-primary-600 {
+  color: var(--color-primary-600);
+}
+.text-primary-700 {
+  color: var(--color-primary-700);
+}
+.text-white {
+  color: var(--color-white);
+}
+
+.text-hover-primary:hover {
+  color: var(--color-primary-400);
+}
+
+.border-primary {
+  border-color: var(--color-primary-500);
+}
+.border-primary-600 {
+  border-color: var(--color-primary-600);
+}
+.border-dark {
+  border-color: var(--color-bg-900);
+}
+
+.btn-primary {
+  background-color: var(--color-primary-400);
+  color: var(--color-bg-900);
+  border: 1px solid var(--color-primary-600);
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-500);
+}
+
+a {
+  text-decoration-line: none !important;
+  color: var(--color-bg-100);
+}

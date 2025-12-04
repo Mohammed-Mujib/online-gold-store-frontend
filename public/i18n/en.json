@@ -1,0 +1,29 @@
+{
+  "language": "English",
+  "global": {
+    "home": "Home",
+    "shopNow": "Shop Now",
+    "sellGold": "Sell Gold",
+    "about": "About",
+    "contactUs": "Contact Us",
+    "customeOrder": "Custome Order",
+    "royalTouch": "Royal Touch",
+    "login": "Login",
+    "register": "Register",
+    "language":"Language",
+    "languages": "Languages",
+    "english":"English",
+    "arabic":"Arabic"
+  },
+  "auth":{
+    "userName":"User Name",
+    "email":"Email",
+    "password":"Password",
+    "passwordConfirmation":"Password Confirmation",
+    "registerNow":"Register Now",
+    "name":"Name",
+    "loginNow":"Login Now",
+    "alreadyHaveAnAccount?":"Already have an account ?",
+    "don'tHaveAnAccount?":"Don't have an account ?"
+  }
+}

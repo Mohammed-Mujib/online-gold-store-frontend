@@ -1,0 +1,29 @@
+{
+  "language": "العربية",
+  "global": {
+    "home": "الرئيسية",
+    "shopNow": "تسوق الآن",
+    "sellGold": "بيع الذهب",
+    "about": "من نحن",
+    "contactUs": "اتصل بنا",
+    "customeOrder": "طلب مخصص",
+    "royalTouch": "لمسة ملكية",
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "language":"اللغة",
+    "languages": "اللغات",
+    "english": "الإنجليزية",
+    "arabic": "العربية"
+  },
+  "auth": {
+    "userName": "اسم المستخدم",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "passwordConfirmation": "تأكيد كلمة المرور",
+    "registerNow": "سجّل الآن",
+    "name": "الاسم",
+    "loginNow": "سجّل دخولك الآن",
+    "alreadyHaveAnAccount?": "هل لديك حساب بالفعل؟",
+    "don'tHaveAnAccount?": "ليس لديك حساب؟"
+  }
+}
