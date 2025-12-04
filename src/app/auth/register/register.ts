@@ -62,7 +62,7 @@ export class Register implements OnInit {
               summary: 'Success',
               detail: 'User registered successfully',
             });
-            this.router.navigate(['auth/register']);
+            this.router.navigate(['auth/login']);
           }
         },
         error: (err) => {

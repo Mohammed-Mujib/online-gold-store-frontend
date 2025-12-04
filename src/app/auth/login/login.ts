@@ -64,10 +64,11 @@ export class Login implements OnInit {
             summary: 'Success',
             detail: 'User registered successfully',
           });
-          // this.router.navigate(['auth/register']);
+          this.router.navigate(['home']);
           console.log(res);
-          localStorage.setItem("token",res.data.token);
-          localStorage.setItem('user', JSON.stringify(res.data.user));
+
+          sessionStorage.setItem("token",res.data.token);
+          sessionStorage.setItem('user', JSON.stringify(res.data.user));
 
 
           // }

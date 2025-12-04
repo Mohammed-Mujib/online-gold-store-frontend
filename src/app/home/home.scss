@@ -1,4 +1,4 @@
-@use "../../styles.scss";
+@use '../../styles.scss';
 // nav{
 //   background-color: var(--main-bg);
 // }
@@ -7,3 +7,30 @@
 //     color: var(--text-white) !important;
 // }
 
+.account-button {
+  .dropdown-toggle {
+    background-color: var(--color-primary-500);
+      // color: var(--color-bg-700) !important;
+
+  }
+  // margin-right: 200px;
+  position: relative;
+  .dropdown-menu {
+    span {
+      // color: var(--color-bg-900) !important;
+      color: red !important;
+    }
+    // position: absolute;
+    left: -100px !important;
+    .dropdown-item {
+      &:hover {
+        background-color: var(--color-primary-300) !important;
+        color: var(--color-bg-900) !important;
+      }
+    }
+    .active {
+      background-color: transparent !important;
+      color: var(--color-primary-400) !important;
+    }
+  }
+}
