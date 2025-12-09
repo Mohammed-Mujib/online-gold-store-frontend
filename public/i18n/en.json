@@ -1,5 +1,6 @@
 {
   "language": "English",
+  "dir":"ltr",
   "global": {
     "home": "Home",
     "shopNow": "Shop Now",
@@ -13,7 +14,8 @@
     "language":"Language",
     "languages": "Languages",
     "english":"English",
-    "arabic":"Arabic"
+    "arabic":"Arabic",
+    "account":"Account"
   },
   "auth":{
     "userName":"User Name",
@@ -25,5 +27,19 @@
     "loginNow":"Login Now",
     "alreadyHaveAnAccount?":"Already have an account ?",
     "don'tHaveAnAccount?":"Don't have an account ?"
+  },
+  "nav":{
+    "account": "Account",
+    "dashboard":"Dashboard",
+    "logout":"Logout"
+  },
+  "dashboard":{
+    "dashboard":"Dashboard",
+    "products":"Prodcuts",
+    "categories":"Categories",
+    "orders":"Orders",
+    "sells":"Sells",
+    "sellRequests":"Sell Requests",
+    "users":"Users"
   }
 }

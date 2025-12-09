@@ -1,0 +1,25 @@
+@use '../../styles.scss';
+
+.dropdown-container {
+  .dropdown-toggle {
+    background-color: var(--color-primary-500);
+
+  }
+  .dropdown-menu {
+    .dropdown-item {
+      background-color: var(--color-bg-90) !important;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--color-primary-300) !important;
+        color: var(--color-bg-900) !important;
+      }
+    }
+    .active {
+      background-color: transparent !important;
+      color: var(--color-primary-400) !important;
+    }
+  }
+  .auth-container{
+    width: fit-content;
+  }
+}

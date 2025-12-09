@@ -1,0 +1,120 @@
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body p-3" data-bs-theme="dark">
+  <div class="container-fluid px-5">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img
+        src="../assets/images/OGSIcone.png"
+        alt="Logo"
+        width="50"
+        height="50"
+        class="d-inline-block align-text-top"
+      />
+      <span class="text-primary mx-4">{{ 'global.royalTouch' | translate }}</span>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{ 'global.home' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{ 'global.shopNow' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{ 'global.customeOrder' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{ 'global.sellGold' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{ 'global.about' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{ 'global.contactUs' | translate }}</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="collapse navbar-collapse auth-container row" id="navbarNav">
+      <div class="d-flex align-items-center justify-content-end ms-auto lang-dropdown">
+        <div class="dropdown dropdown-container me-5">
+          <button
+            class="btn btn-secondary dropdown-toggle p-2 px-1 bg-dark border-0"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {{ 'global.languages' | translate }} <i class="pi pi-language"></i>
+          </button>
+
+          <ul class="dropdown-menu dropdown-menu-dark p-2 mt-2">
+            <li>
+              <span class="dropdown-item rounded-1 p-1" (click)="changeLanguage('en')">{{
+                'global.english' | translate
+              }}</span>
+            </li>
+            <li>
+              <span class="dropdown-item rounded-1 p-1" (click)="changeLanguage('ar')">{{
+                'global.arabic' | translate
+              }}</span>
+            </li>
+          </ul>
+        </div>
+
+        @if (!token) {
+        <a type="button" class="btn btn-primary mx-1" [routerLink]="['/auth/login']">{{
+          'global.login' | translate
+        }}</a>
+        <a type="button" class="btn btn-primary mx-1" [routerLink]="['/auth/register']">
+          {{ 'global.register' | translate }}
+        </a>
+        } @else {
+        <div class="dropdown dropdown-container">
+          <button
+            class="btn dropdown-toggle p-2 rounded-2"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="p-1 rounded-3 fw-semibold"
+              ><i class="fa-regular fa-user fs-3"></i> {{ user.name }}</span
+            >
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark p-2 mt-2">
+            <li>
+              <a class="dropdown-item active rounded-1 p-1" href="#">{{
+                'nav.account' | translate
+              }}</a>
+            </li>
+            @if (user.role == "admin") {
+            <li>
+              <a class="dropdown-item rounded-1 p-1" [routerLink]="['/dashboard']">{{
+                'nav.dashboard' | translate
+              }}</a>
+            </li>
+            }
+            <li><hr class="dropdown-divider my-1" /></li>
+            <li>
+              <button class="dropdown-item rounded-1 p-1" (click)="logout()">
+                {{ 'nav.logout' | translate }}
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        }
+      </div>
+    </div>
+  </div>
+</nav>

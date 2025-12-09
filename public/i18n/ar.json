@@ -1,5 +1,6 @@
 {
   "language": "العربية",
+  "dir": "rtl",
   "global": {
     "home": "الرئيسية",
     "shopNow": "تسوق الآن",
@@ -10,11 +11,13 @@
     "royalTouch": "لمسة ملكية",
     "login": "تسجيل الدخول",
     "register": "إنشاء حساب",
-    "language":"اللغة",
+    "language": "اللغة",
     "languages": "اللغات",
     "english": "الإنجليزية",
-    "arabic": "العربية"
+    "arabic": "العربية",
+    "account": "الحساب"
   },
+
   "auth": {
     "userName": "اسم المستخدم",
     "email": "البريد الإلكتروني",
@@ -22,8 +25,22 @@
     "passwordConfirmation": "تأكيد كلمة المرور",
     "registerNow": "سجّل الآن",
     "name": "الاسم",
-    "loginNow": "سجّل دخولك الآن",
+    "loginNow": "تسجيل الدخول الآن",
     "alreadyHaveAnAccount?": "هل لديك حساب بالفعل؟",
     "don'tHaveAnAccount?": "ليس لديك حساب؟"
+  },
+  "nav": {
+    "account": "الحساب",
+    "dashboard": "لوحة التحكم",
+    "logout": "تسجيل الخروج"
+  },
+  "dashboard": {
+    "dashboard": "لوحة التحكم",
+    "products": "المنتجات",
+    "categories": "الأقسام",
+    "orders": "الطلبات",
+    "sells": "المبيعات",
+    "sellRequests": "طلبات البيع",
+    "users": "المستخدمون"
   }
 }
